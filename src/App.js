@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Hero from "./body/Hero";
+import Hero from "./home/Hero";
 import "./App.css";
 
 class App extends Component {

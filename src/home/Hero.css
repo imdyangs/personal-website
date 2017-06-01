@@ -12,13 +12,14 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: center;
     background-size: 100% auto;
 }
 
 .content {
     display: flex;
+    justify-content: center;
     height: 100%;
     width: 100vw;
     max-width: 1200px;
@@ -28,9 +29,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-self: center;
     padding: 12px;
     width: 100%;
     height: 100px;
+    max-width: 1300px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 0px;
+    } 
 }
 
 .leftNav {
@@ -39,6 +48,12 @@
     text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.17);
     padding: 12px 8px 8px 12px;
     font-family: 'Horatio';
+}
+
+@media screen and (max-width: 600px) {
+    .leftNav {
+        padding: 1px 14px 18px 8px;
+    } 
 }
 
 .rightNav {
@@ -51,8 +66,26 @@
     font-family: 'Playfair Display';
 }
 
+@media screen and (max-width: 600px) {
+    .rightNav {
+        padding: 1px 8px 18px 12px;
+    } 
+}
+
+.about-me {
+    display: flex;
+    align-self: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    max-width: 900px;
+    padding: 0 60px 140px;
+}
+
+
 a {
-    padding: 8px;
+    padding: 0 8px;
     text-decoration: none;
 }
 
