@@ -15,13 +15,13 @@ class Hero extends React.Component {
         .from("#four", 0.8, {opacity:0}, "+=0.4")
     } else {
       aboutMeTimeline
-        .from("#one", 1.3, {opacity:0, delay:0.8, ease:Power2.easeIn})
-        .from("#two", 1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
-        .from("#three", 1.2, {opacity:0, ease:Power2.easeIn}, "+=0.2")
-        .from("#four", 1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
-        .from("#five", 0.8, {opacity:0}, "+=0.3")
-        .from("#six", 0.8, {opacity:0}, "+=0.2")
-        .from("#seven", 0.8, {opacity:0}, "+=0.2")
+        .from("#one", 1.1, {opacity:0, delay:0.8, ease:Power2.easeIn})
+        .from("#two", 1.1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
+        .from("#three", 1.1, {opacity:0, ease:Power2.easeIn}, "+=0.2")
+        .from("#four", 1.1, {opacity:0, ease:Power2.easeIn}, "-=0.4")
+        .from("#five", 0.7, {opacity:0}, "+=0.4")
+        .from("#six", 0.7, {opacity:0}, "+=0.3")
+        .from("#seven", 0.7, {opacity:0}, "+=0.3")
     }
   }
   render() {
