@@ -9,17 +9,17 @@ class Hero extends React.Component {
     const aboutMeTimeline = new TimelineLite();
     if (this.props.isMobile) {
       aboutMeTimeline
-        .from("#one", 1, {opacity:0, delay:0.8, ease:Power2.easeIn})
-        .from("#two", 1, {opacity:0, delay:1, ease:Power2.easeIn})
-        .from("#three", 1, {opacity:0, delay:1, ease:Power2.easeIn})
-        .from("#four", 1, {opacity:0, delay:1, ease:Power2.easeIn})
+        .from("#one", 1.2, {opacity:0, delay:0.8, ease:Power2.easeIn})
+        .from("#two", 1.2, {opacity:0, ease:Power2.easeIn}, "+=0.1")
+        .from("#three", 0.8, {opacity:0}, "+=0.6")
+        .from("#four", 0.8, {opacity:0}, "+=0.4")
     } else {
       aboutMeTimeline
-        .from("#one", 1.3, {opacity:0, delay:1, ease:Power2.easeIn})
+        .from("#one", 1.3, {opacity:0, delay:0.8, ease:Power2.easeIn})
         .from("#two", 1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
         .from("#three", 1.2, {opacity:0, ease:Power2.easeIn}, "+=0.2")
         .from("#four", 1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
-        .from("#five", 0.8, {opacity:0}, "+=0.5")
+        .from("#five", 0.8, {opacity:0}, "+=0.3")
         .from("#six", 0.8, {opacity:0}, "+=0.2")
         .from("#seven", 0.8, {opacity:0}, "+=0.2")
     }
