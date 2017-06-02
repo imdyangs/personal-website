@@ -1,56 +1,61 @@
 import React from "react";
-import $ from "jquery";
+import { Power2, TimelineLite, Power4 } from "gsap";
 
 import Navbar from "./Navbar.js";
 import "./Hero.css";
 
-const mobileSize = 650;
-
 class Hero extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      width: null,
-      height: null,
-      isMobile: false
-    };
-  }
-
-  updateDimensions = () => {
-    this.setState({
-      width: $(window).width(),
-      height: $(window).height()
-    });
-    $(window).width() < mobileSize
-      ? this.setState({ isMobile: true })
-      : this.setState({ isMobile: false });
-  };
-
-  componentWillMount() {
-    this.updateDimensions();
-  }
-
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
+    const aboutMeTimeline = new TimelineLite();
+    if (this.props.isMobile) {
+      aboutMeTimeline
+        .from("#one", 1, {opacity:0, delay:0.8, ease:Power2.easeIn})
+        .from("#two", 1, {opacity:0, delay:1, ease:Power2.easeIn})
+        .from("#three", 1, {opacity:0, delay:1, ease:Power2.easeIn})
+        .from("#four", 1, {opacity:0, delay:1, ease:Power2.easeIn})
+    } else {
+      aboutMeTimeline
+        .from("#one", 1.5, {opacity:0, delay:1, ease:Power2.easeIn})
+        .from("#two", 1.4, {opacity:0, ease:Power2.easeIn}, "-=0.5")
+        .from("#three", 1.4, {opacity:0, ease:Power2.easeIn}, "+=0.2")
+        .from("#four", 1.4, {opacity:0, ease:Power2.easeIn}, "-=0.6")
+        .from("#five", 0.8, {opacity:0},)
+        .from("#six", 0.8, {opacity:0}, "+=0.3")
+        .from("#seven", 0.8, {opacity:0}, "+=0.3")
+    }
   }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions);
-  }
-
   render() {
-    let isMobile = this.state.isMobile;
-
     return (
       <div className="container">
-        <Navbar isMobile={isMobile} />
+        <Navbar isMobile={this.props.isMobile} />
         <div className="content">
           <div className="about-me">
-            my name is david yang and i aspire to build
-            {" "}
-            <br />
-            {" "}
-            scaled, world positive technologies.
+            {/*Line Breaks for Web and Mobile*/}
+            {this.props.isMobile
+              ? <div>
+                  <span id="one">my name is <br /> david yang</span>
+                  {" "}
+                  <br />
+                  <span id="two">and i aspire to <br /> build scalable,</span>
+                  {" "}
+                  <br />
+                  <span id="three"> world positive</span>
+                  {" "}
+                  <span id="four">technologies.</span>
+                </div>
+              : <div>
+                  <span id="one">my name is</span>
+                  <span id="two"> david yang</span>
+                  {" "}
+                  <span id="three"> and i aspire</span>
+                  {" "}
+                  <span id="four"> to build </span>
+                  <br />
+                  <span id="five">scalable,</span>
+                  {" "}
+                  <span id="six">world positive </span>
+                  <span id="seven">technologies.</span>
+                </div>}
           </div>
         </div>
       </div>

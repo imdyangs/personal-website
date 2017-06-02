@@ -1,4 +1,5 @@
 import React from "react";
+import {TweenMax} from "gsap";
 
 class Navbar extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Navbar extends React.Component {
           </a>
         </div>
         <div className="rightNav">
-          <a href="/about" className="contact">about</a>
+          <a href="/about" className="about">about</a>
           <a href="/contact" className="contact">contact</a>
         </div>
       </div>
