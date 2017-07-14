@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import $ from "jquery";
 
 import Hero from "./home/Hero";
-import "./App.css";
 
 const mobileSize = 650;
 

@@ -2,9 +2,9 @@ import React from "react";
 import logo from "./logoNoDsvg.svg";
 
 const imageStyles = {
-  paddingTop: '8px',
+  paddingTop: '4px',
   width: '44px',
-  height: '44px'
+  height: '46px'
 }
 
 class Navbar extends React.Component {
@@ -19,7 +19,7 @@ class Navbar extends React.Component {
         </div>
         <div className="rightNav">
           <a href="/about" className="about">about</a>
-          <a href="/contact" className="contact">contact</a>
+          <a href="/projects" className="projects">projects</a>
         </div>
       </div>
     );

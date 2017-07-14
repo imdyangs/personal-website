@@ -17,11 +17,11 @@ class Hero extends React.Component {
       aboutMeTimeline
         .from("#one", 1.1, {opacity:0, delay:0.8, ease:Power2.easeIn})
         .from("#two", 1.1, {opacity:0, ease:Power2.easeIn}, "-=0.3")
-        .from("#three", 1.1, {opacity:0, ease:Power2.easeIn}, "+=0.2")
+        .from("#three", 1.1, {opacity:0, ease:Power2.easeIn})
         .from("#four", 1.1, {opacity:0, ease:Power2.easeIn}, "-=0.4")
-        .from("#five", 0.7, {opacity:0}, "+=0.4")
-        .from("#six", 0.7, {opacity:0}, "+=0.3")
-        .from("#seven", 0.7, {opacity:0}, "+=0.3")
+        .from("#five", 0.7, {opacity:0}, "+=0.2")
+        .from("#six", 0.7, {opacity:0}, "+=0.2")
+        .from("#seven", 0.7, {opacity:0}, "+=0.2")
     }
   }
   render() {
