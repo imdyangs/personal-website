@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import $ from "jquery";
+import React, { Component } from 'react';
+import $ from 'jquery';
 
-import Hero from "./home/Hero";
+import Hero from './home/Hero';
 
 const mobileSize = 650;
 
 class App extends Component {
-   constructor() {
+  constructor() {
     super();
     this.state = {
       width: null,
@@ -30,17 +30,17 @@ class App extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
+    window.addEventListener('resize', this.updateDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions);
+    window.removeEventListener('resize', this.updateDimensions);
   }
   render() {
     let isMobile = this.state.isMobile;
     return (
       <div className="App">
-        <Hero isMobile={isMobile} />
+        <Hero />
       </div>
     );
   }
