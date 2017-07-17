@@ -1,6 +1,9 @@
 import React from 'react';
 import { Power2, TimelineLite, TweenMax } from 'gsap';
 
+import About from '../about/About';
+import Contact from '../contact/Contact';
+
 import Navbar from './Navbar.js';
 import './Hero.css';
 
@@ -42,7 +45,7 @@ class Hero extends React.Component {
     TweenMax.to('.aboutPage', 0.4, { opacity: 0 });
     TweenMax.to('.contactPage', 0.4, { opacity: 0 });
     setTimeout(() => {
-      console.log('ok')
+      console.log('ok');
       this.setState({
         page: 'home'
       });
@@ -62,7 +65,7 @@ class Hero extends React.Component {
       aboutMeTimeline
         .from('#one', 1, { opacity: 0, delay: 0.8, ease: Power2.easeIn })
         .from('#two', 1, { opacity: 0, ease: Power2.easeIn }, '-=0.4')
-        .from('#three', 1, { opacity: 0, ease: Power2.easeIn })
+        .from('#three', 1, { opacity: 0, ease: Power2.easeIn }, '-=0.1')
         .from('#four', 1, { opacity: 0, ease: Power2.easeIn }, '-=0.4')
         .from('#five', 0.7, { opacity: 0 }, '+=0.1')
         .from('#six', 0.7, { opacity: 0 }, '+=0.1')
@@ -109,7 +112,7 @@ class Hero extends React.Component {
       console.log('about');
       body = (
         <div className="aboutPage">
-          okay
+          <About />
         </div>
       );
     }
@@ -118,9 +121,9 @@ class Hero extends React.Component {
       console.log('contact');
       body = (
         <div className="contactPage">
-          litty
+          <Contact />
         </div>
-      )
+      );
     }
 
     return (
