@@ -1,0 +1,42 @@
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  max-width: 425px;
+}
+
+.bioHeader {
+  font-size: 30px;
+}
+
+.bioContent {
+  font-size: 16px;
+}
+
+.projects {
+  padding-right: 30px;
+  padding-top: 40px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectHeader {
+  font-size: 30px;
+  align-self: flex-end;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}

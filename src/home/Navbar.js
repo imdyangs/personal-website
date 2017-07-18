@@ -35,10 +35,10 @@ class Navbar extends React.Component {
           </a>
         </div>
         <div className="rightNav">
-          <a href="/about" className="about" onClick={this.onAbout}>about</a>
-          <a href="/projects" className="projects" onClick={this.onContact}>
+          <a href="/about" className="about" onClick={this.onAbout}>about me</a>
+          {/*<a href="/projects" className="contact" onClick={this.onContact}>
             contact
-          </a>
+          </a>*/}
         </div>
       </div>
     );

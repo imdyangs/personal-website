@@ -6,8 +6,8 @@ class About extends React.Component {
   render() {
     return (
       <div className="contactContent">
-        Hey there
-        <div className="footer">huh</div>
+        huh
+        <div className="footer"></div>
       </div>
     );
   }

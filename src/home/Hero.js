@@ -135,9 +135,7 @@ class Hero extends React.Component {
           handleAbout={this.about}
         />
         <div className="content">
-          <div className="about-me">
-            {body}
-          </div>
+          {body}
         </div>
       </div>
     );
