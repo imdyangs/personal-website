@@ -2,7 +2,7 @@
   "name": "personal-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://imdyangs.github.io/okay",
+  "homepage": "https://imdyangs.github.io/personal-website",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "gsap": "^1.19.1",
