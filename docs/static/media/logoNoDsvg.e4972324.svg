@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="137px" viewBox="0 0 123 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>logoNoDsvg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="3.14692283%" x2="50%" y2="99.1526128%" id="linearGradient-1">
+            <stop stop-color="#567590" offset="0%"></stop>
+            <stop stop-color="#001A36" offset="72.5386639%"></stop>
+            <stop stop-color="#001731" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#50BEE6" offset="0%"></stop>
+            <stop stop-color="#50BEE6" offset="96.2591677%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#07375E" offset="0%"></stop>
+            <stop stop-color="#1B4F7A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#3A87B2" offset="0%"></stop>
+            <stop stop-color="#1B4F7A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logoNoDsvg">
+            <g id="Page-1">
+                <g id="icon">
+                    <g id="logoNoD">
+                        <g id="back" style="mix-blend-mode: screen;" fill="url(#linearGradient-1)">
+                            <polygon id="Mask" style="mix-blend-mode: screen;" points="61.3447548 0 122.68951 34.25 122.68951 102.75 61.3447548 137 3.19744231e-14 102.75 -7.10542736e-15 34.25"></polygon>
+                        </g>
+                        <g id="Mountains" transform="translate(0.000000, 54.162791)">
+                            <polygon id="Path-1" fill="#6BD8FF" points="0 48.582125 33.3576228 12.9789725 53.5235306 28.8692985 62.2020372 24.5495192 51.104488 16.0671973 72.2383223 0 122.68951 48.5932043"></polygon>
+                            <polygon id="Path-1" fill="url(#linearGradient-2)" points="0 48.5866439 33.1043782 20.8103297 53.451857 37.8371321 62.2085037 33.2084021 51.0110337 24.1194244 72.3351541 6.90310078 122.687005 48.5985156"></polygon>
+                        </g>
+                        <g id="Group" transform="translate(0.000000, 69.620003)">
+                            <polygon id="Path-1" fill="url(#linearGradient-3)" transform="translate(61.344755, 49.511963) scale(-1, -1) translate(-61.344755, -49.511963) " points="0 65.9845413 33.105054 44.0248981 53.4529483 57.4860976 62.2097737 53.8266754 51.0120751 46.6410313 72.3366309 33.0299985 122.68951 65.9939269"></polygon>
+                            <polygon id="Path-1" fill="url(#linearGradient-4)" points="0 33.1549051 33.105054 11.1952619 53.4529483 24.6564614 62.2097737 20.9970393 51.0120751 13.8113951 72.3366309 0.200362314 122.68951 33.1642908"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
