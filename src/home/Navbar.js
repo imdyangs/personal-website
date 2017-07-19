@@ -27,15 +27,15 @@ class Navbar extends React.Component {
     return (
       <div className="navbar">
         <div className="leftNav">
-          <a href="/" onClick={this.onHome}>
+          <a href="" onClick={this.onHome}>
             <img src={logo} alt="" style={imageStyles} />
           </a>
-          <a href="/" className="contact" onClick={this.onHome}>
+          <a href="" className="contact" onClick={this.onHome}>
             {this.props.isMobile ? <div>david</div> : <div>david yang</div>}
           </a>
         </div>
         <div className="rightNav">
-          <a href="/about" className="about" onClick={this.onAbout}>about me</a>
+          <a href="" className="about" onClick={this.onAbout}>about me</a>
           {/*<a href="/projects" className="contact" onClick={this.onContact}>
             contact
           </a>*/}
