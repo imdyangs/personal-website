@@ -36,9 +36,6 @@ class Navbar extends React.Component {
         </div>
         <div className="rightNav">
           <a href="./" className="about" onClick={this.onAbout}>about me</a>
-          {/*<a href="/projects" className="contact" onClick={this.onContact}>
-            contact
-          </a>*/}
         </div>
       </div>
     );
