@@ -137,6 +137,12 @@ class Hero extends React.Component {
         <div className="content">
           {body}
         </div>
+        <div className="footer">
+          ajsdf
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+          <img src="" alt=""/>
+        </div>
       </div>
     );
   }

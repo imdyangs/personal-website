@@ -4,7 +4,8 @@ import logo from './logoNoDsvg.svg';
 const imageStyles = {
   paddingTop: '4px',
   width: '44px',
-  height: '46px'
+  height: '46px',
+  cursor: 'pointer',
 };
 
 class Navbar extends React.Component {
@@ -27,15 +28,15 @@ class Navbar extends React.Component {
     return (
       <div className="navbar">
         <div className="leftNav">
-          <a href="./" onClick={this.onHome}>
+          <a onClick={this.onHome}>
             <img src={logo} alt="" style={imageStyles} />
           </a>
-          <a href="./" className="contact" onClick={this.onHome}>
+          <a className="contact" onClick={this.onHome}>
             {this.props.isMobile ? <div>david</div> : <div>david yang</div>}
           </a>
         </div>
         <div className="rightNav">
-          <a href="./" className="about" onClick={this.onAbout}>about me</a>
+          <a className="about" onClick={this.onAbout}>about me</a>
         </div>
       </div>
     );

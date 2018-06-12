@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid#D3D3D3;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.left {
+  display: flex;
+  padding-left: 12px;
+}
+
+.slack {
+  align-self: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.right {
+  display: flex;
+  padding-right: 40px;
+}
+
+.product {
+  padding: 6px 12px;
+}
+
+.shit {
+  padding: 6px;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.body {
+  background-color:#fafafa;
+  height: 100vh;
+}
+
+.wrapper {
+  padding-top: 28px;
+}
+
+.box {
+  margin: auto;
+  width: 760px;
+  background-color: white;
+  border: 1px solid#D3D3D3;
+  border-radius: 3px;
+  height: 400px;
+}
+
+.title {
+  padding-top: 24px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.fuck {
+  padding-bottom: 12px;
+}
+
+.input-wrap {
+  align-self: center;
+  display: flex;
+}
+
+.inputter {
+  margin-bottom: 12px;
+}
+
+.continue {
+  
+}
